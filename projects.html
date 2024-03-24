@@ -87,11 +87,11 @@
                 </div>
                 
                 <div class="product">
-                    <img src="Images/emoji.png" alt="EmojiPedia-React">
+                    <img src="Images/business.png" alt="EmojiPedia-React">
                     <br><br>
-                    <h3>EmojiPedia-React</h3><br>
-                    <p style="line-height: 1.2rem; font-size: 14px;">Developed a Card using React.js</p><br>
-                    <a href="https://ladankash.github.io/EmojiPedia-React/" style="text-decoration: none; font-size: 16px;"> <span style="font-weight: bold; font-size: 18px;">Take a look</span>
+                    <h3>Business Website Project</h3><br>
+                    <p style="line-height: 1.2rem; font-size: 14px;">Designed and developed a Business website, using WordPress(Logo, hosting & SEO)</p><br>
+                    <a href="https://ladankashdesigner.com/" style="text-decoration: none; font-size: 16px;"> <span style="font-weight: bold; font-size: 18px;">Take a look</span>
                     </a>
                  </div>
                
@@ -231,6 +231,7 @@
                 <h4>Illustration</h4><br>
                 <p style="line-height: 1.2rem; font-size: 14px;">Adobe Illustrator for Created an internal magazine page with justified text in three columns.</p><br>
             </div>
+       
             <div class="product">
                 <img src="Images/time-magazin.png" alt="Photoshop-time">
                 <br><br>
@@ -238,10 +239,11 @@
                 <p style="line-height: 1.2rem; font-size: 14px;">Created a Time Magazine cover page, leveraging the tools to create a visually captivating design. I selected compelling imagery and utilized typography to create a bold headline and accompanying text that resonate with the theme or topic of the cover story.</p><br>
             </div>
             <div class="product">
-                <img src="Images/photoshop2.png" alt="Photoshop">
+                <img src="Images/photoshop-4.png" alt="Photoshop">
                 <br><br>
                 <h4>Photoshop</h4><br>
-                <p style="line-height: 1.2rem; font-size: 14px;">Created a Time Magazine cover page, leveraging the tools to create a visually captivating design. I selected compelling imagery and utilized typography to create a headline and text that resonate with the theme of the cover story.</p><br>
+                <p style="line-height: 1.2rem; font-size: 14px;">In my Photoshop project, I crafted an interior design scene from scratch, focusing on creating a cohesive and visually appealing space. Using various tools like the free transform tool and selection techniques, I integrated key elements such as walls, floor, furniture, and accessories.
+            I paid special attention to details like lighting effects, as well as creating an overall ambient lighting scheme to enhance the atmosphere of the room.</p><br>
             </div>
             <div class="product">
                 <img src="Images/photoshop3.png" alt="Photoshop">
@@ -282,8 +284,32 @@
             <p>Developed by ladan-kash <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
-     <script src="script.js"></script>
+    
+<!-- -------javascript--------------- -->
 
+<!-- Side menu java script code -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+   
+    function toggleMoreText(productNumber) {
+        var mainText = document.getElementById("main-text" + productNumber);
+        var moreText = document.getElementById("more-text" + productNumber);
+        
+        mainText.classList.toggle("collapsed");
+        mainText.classList.toggle("expanded");
+        moreText.classList.toggle("collapsed");
+        moreText.classList.toggle("expanded");
+    }
+</script>
 
 </body>
 </html>
